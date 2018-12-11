@@ -7,8 +7,8 @@ rm /modules/cs141/.stack/snapshots/x86_64-linux/lts-9.0/8.0.2/pkgdb/package.cach
 rm /modules/cs141/.stack/snapshots/x86_64-linux/lts-12.14/8.4.3/pkgdb/package.cache
 
 # rebuild the package database
-/modules/cs141/bin/ghc-pkg --package-db /modules/cs141/.stack/snapshots/x86_64-linux/lts-9.0/8.0.2/pkgdb/ recache
-/modules/cs141/bin/ghc-pkg --package-db /modules/cs141/.stack/snapshots/x86_64-linux/lts-12.14/8.4.3/pkgdb/ recache
+stack exec --resolver=lts-9.0 -- ghc-pkg --package-db /modules/cs141/.stack/snapshots/x86_64-linux/lts-9.0/8.0.2/pkgdb/ recache
+stack exec --resolver=lts-12.14 -- ghc-pkg --package-db /modules/cs141/.stack/snapshots/x86_64-linux/lts-12.14/8.4.3/pkgdb/ recache
 
 # update permissions so that everyone can access the files
 chmod -R o+rx /modules/cs141/.stack/
