@@ -9,6 +9,9 @@ rm -f ~/.stack/snapshots
 rm -f ~/.stack/global-project
 rm -f ~/.stack/programs
 
+rm -f ~/.hoogle
+rm -f ~/.cabal
+
 # create symbolic links
 ln -s /modules/cs141/.stack/build-plan ~/.stack/build-plan
 ln -s /modules/cs141/.stack/build-plan-cache ~/.stack/build-plan-cache
@@ -19,6 +22,9 @@ ln -s /modules/cs141/.stack/setup-exe-src ~/.stack/setup-exe-src
 ln -s /modules/cs141/.stack/snapshots ~/.stack/snapshots
 ln -s /modules/cs141/.stack/global-project ~/.stack/global-project
 ln -s /modules/cs141/.stack/programs ~/.stack/programs
+
+ln -s /modules/cs141/.hoogle ~/.hoogle
+ln -s /modules/cs141/.cabal ~/.cabal 
 
 # install Atom packages
 apm update --no-confirm
