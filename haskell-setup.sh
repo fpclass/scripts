@@ -19,6 +19,7 @@ ln -s /modules/cs141/.stack/snapshots ~/.stack/snapshots
 ln -s /modules/cs141/.stack/global-project ~/.stack/global-project
 
 # install Atom packages
+apm update --no-confirm
 apm install atom-ide-ui
 apm install language-haskell
 apm install ide-haskell-hie
