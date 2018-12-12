@@ -11,6 +11,7 @@ rm -f ~/.stack/programs
 
 rm -f ~/.hoogle
 rm -f ~/.cabal
+rm -f ~/.cache/cabal-helper
 
 # create symbolic links
 ln -s /modules/cs141/.stack/build-plan ~/.stack/build-plan
