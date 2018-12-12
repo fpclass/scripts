@@ -24,7 +24,8 @@ ln -s /modules/cs141/.stack/global-project ~/.stack/global-project
 ln -s /modules/cs141/.stack/programs ~/.stack/programs
 
 ln -s /modules/cs141/.hoogle ~/.hoogle
-ln -s /modules/cs141/.cabal ~/.cabal 
+ln -s /modules/cs141/.cabal ~/.cabal
+ln -s /modules/cs141/.cache/cabal-helper ~/.cache/cabal-helper
 
 # install Atom packages
 apm update --no-confirm
