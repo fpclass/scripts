@@ -14,6 +14,7 @@ rm -f ~/.cabal
 rm -f ~/.cache/cabal-helper
 
 # create symbolic links
+mkdir ~/.stack
 ln -s /modules/cs141/.stack/build-plan ~/.stack/build-plan
 ln -s /modules/cs141/.stack/build-plan-cache ~/.stack/build-plan-cache
 ln -s /modules/cs141/.stack/indices ~/.stack/indices
