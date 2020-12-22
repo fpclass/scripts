@@ -7,9 +7,9 @@ echo 'export STACK_ROOT=/modules/cs141/2021/stack-data/' >> ~/.bashrc
 
 # install VSCode extensions
 echo Installing VSCode extensions...
-code --log off --uninstall-extension justusadam.language-haskell
-code --log off --uninstall-extension haskell.haskell
-code --log off --install-extension justusadam.language-haskell@3.3.0
-code --log off --install-extension haskell.haskell@1.2.0
+code --uninstall-extension haskell.haskell
+code --uninstall-extension justusadam.language-haskell
+code --install-extension justusadam.language-haskell@3.3.0
+code --install-extension haskell.haskell@1.2.0
 
 echo Setup completed.
