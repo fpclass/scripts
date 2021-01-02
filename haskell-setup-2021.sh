@@ -3,7 +3,12 @@ rm -f ~/.stack
 
 # Update .bashrc to add STACK_ROOT
 echo Updating .bashrc...
-echo 'export STACK_ROOT=/modules/cs141/2021/stack-data/' >> ~/.bashrc
+if grep -q 'export STACK_ROOT=/modules/cs141/2021/stack-data/' ~/.bashrc; then
+    echo Not required
+else
+    echo 'export STACK_ROOT=/modules/cs141/2021/stack-data/' >> ~/.bashrc
+    echo Done
+fi
 
 # install VSCode extensions
 echo Installing VSCode extensions...
