@@ -12,16 +12,15 @@ fi
 
 # install VSCode extensions
 echo Installing VSCode extensions...
-code --uninstall-extension haskell.haskell
+# code --uninstall-extension haskell.haskell
 code --uninstall-extension justusadam.language-haskell
 code --install-extension justusadam.language-haskell@3.3.0
-code --install-extension haskell.haskell@1.2.0
+# code --install-extension haskell.haskell@1.2.0
 code --install-extension MS-vsliveshare.vsliveshare-pack@0.4.0
 
 # install Atom packages
 apm update --no-confirm
 apm install atom-ide-ui
 apm install language-haskell
-apm install ide-haskell-hie
 
 echo Setup completed. Please close all active terminal sessions and start a new one to ensure the changes take effect.
