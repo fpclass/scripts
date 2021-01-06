@@ -1,1 +1,1 @@
-haskell-setup-1920.sh
+haskell-setup-2021.sh
